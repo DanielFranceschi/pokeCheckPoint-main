@@ -1,0 +1,14 @@
+<h1>Pokemons</h1>
+
+@for(Poke of pokeList; track $index){
+<ul style="list-style-type: none; padding: 0; text-align: left;">
+        <li style="margin-bottom: 20px; display: flex; align-items: center;">
+            <img src="{{Poke.imageUrl}}" alt="pokemons image" style="width: 100px; height: 100px; margin-right: 20px;">
+            <div style="display: flex; flex-direction: column;">
+                <span style="font-weight: bold;">{{Poke.name}}</span>
+                <span>{{Poke.id}}</span>
+            </div>
+        </li>
+    </ul>
+    }
+
