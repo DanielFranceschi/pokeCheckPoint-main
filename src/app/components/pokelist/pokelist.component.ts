@@ -13,15 +13,11 @@ export class PokeListComponent {
   pokeList: Poke[] = [  ];
   constructor(private pokeService: PokeService) {}
   
-  listar(): Poke[] {
+  list(): Poke[] {
     return this.pokeList= this.pokeService.listar();
     
   }
   ngOnInit(): void {
-    this.listar();
+    this.list();
   }
-
-
-
-
 }

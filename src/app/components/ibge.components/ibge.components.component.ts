@@ -12,15 +12,12 @@ import { IbgeService } from '../../services/ibge.service';
 export class IbgeListComponent {
   estados: Estados[] = [];
 
-  constructor(private ibgeService: IbgeService) {
-    this.list();
-  }
+  constructor(private ibgeService: IbgeService) {}
+  
   list(): void {
-    //retorna uma lista de clientes do servidor e atribui à propriedade 'clientes'
      this.ibgeService.list().subscribe((list) => (this.estados = list));
   }
-    //método para remover um cliente
-  ngOnInit(): void {
+ ngOnInit(): void {
     this.list();
   }
 }

@@ -1,22 +1,16 @@
-<div class="container-fluid">
-
-    <table class="table table-striped">
-        <thead>
+<h1>Estados</h1>
+<table class="table table-striped">
+     <thead>
+        <th>Id</th>
+        <th>Sigla</th>
+        <th>Nome</th>
+     </thead>
+     <tbody>
+            @for (itens of estados; track $index){
             <tr>
-                <th>Id</th>
-                <th>Sigla</th>
-                <th>Nome</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for (item of estados; track $index)
-            {
-            <tr>
-                <td>{{item.id}}</td>
-                <td>{{item.sigla}}</td>
-                <td>{{item.nome}}</td>
-            </tr>
-            }
-        </tbody>
-    </table>
-</div>
+                <td>{{itens.id}}</td>
+                <td>{{itens.sigla}}</td>
+                <td>{{itens.nome}}</td>
+            </tr>}
+    </tbody>
+ </table>
