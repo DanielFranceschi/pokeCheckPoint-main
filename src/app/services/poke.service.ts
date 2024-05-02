@@ -4,6 +4,9 @@ import { Poke } from "../interfaces/poke";
   providedIn: 'root'
 })
 export class PokeService {
+  getPokemons() {
+    throw new Error('Method not implemented.');
+  }
   constructor() { }
   pokeList:Poke[]=[
 

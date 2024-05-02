@@ -10,9 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pokelist.component.css'
 })
 export class PokeListComponent {
-  pokeList: Poke[] = [
-
-  ];
+  pokeList: Poke[] = [  ];
   constructor(private pokeService: PokeService) {}
   
   listar(): Poke[] {
